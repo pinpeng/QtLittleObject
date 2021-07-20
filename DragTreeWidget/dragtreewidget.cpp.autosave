@@ -69,6 +69,7 @@ void DragTreeWidget::mouseMoveEvent(QMouseEvent *ev)
 
 void DragTreeWidget::mouseReleaseEvent(QMouseEvent *ev)
 {
+  //无论如何都先隐藏一下label
   label.hide();
 
   QTreeWidgetItem* pTarget = itemAt(ev->pos());
